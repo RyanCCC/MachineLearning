@@ -2,7 +2,7 @@
 
 机器学习
 
-1. 数据预处理 preprocessing
+1. 数据预处理 (python sklearn preprocessing)
 
     （1）缺省值处理
 
@@ -10,7 +10,7 @@
 
     （3）数据集处理 数据归一化标准化
 
-2. 特征工程feature_selection 
+2. 特征工程 (python sklearn feature_selection) 
 
     （1）特征选择
 
