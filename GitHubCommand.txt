@@ -1,0 +1,145 @@
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git push -f orgin master
+fatal: 'orgin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git push -f origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 278 bytes | 278.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/RyanCCC/MachineLearning.git
+ + c830069...5a114ac master -> master (forced update)
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ dir
+README.md
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ mkdir Preprocessing
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ dir
+Preprocessing  README.md
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git add .
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git commit -m 'add dir--preprocessing'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git push -f origin master
+Everything up-to-date
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git add propressing
+fatal: pathspec 'propressing' did not match any files
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ cd Preprocessing/
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning/Preprocessing (master)
+$ git add .
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning/Preprocessing (master)
+$ git commit -m 'add directory--preprocessing'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning/Preprocessing (master)
+$ git push
+Everything up-to-date
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning/Preprocessing (master)
+$ git branch preprocessing
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning/Preprocessing (master)
+$ git checkout preprocessing
+Switched to branch 'preprocessing'
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning/Preprocessing (preprocessing)
+$ git push origin MachineLearning:Preprocessing
+error: src refspec MachineLearning does not match any.
+error: failed to push some refs to 'https://github.com/RyanCCC/MachineLearning.git'
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning/Preprocessing (preprocessing)
+$ git push origin preprocessing
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'preprocessing' on GitHub by visiting:
+remote:      https://github.com/RyanCCC/MachineLearning/pull/new/preprocessing
+remote:
+To https://github.com/RyanCCC/MachineLearning.git
+ * [new branch]      preprocessing -> preprocessing
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning/Preprocessing (preprocessing)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning/Preprocessing (master)
+$ cd ..
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git add .
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git commit -m 'add test.txt'
+[master 483d556] add test.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Test.txt
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 136.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/RyanCCC/MachineLearning.git
+   5a114ac..483d556  master -> master
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git pull origin master
+fatal: TaskCanceledException encountered.
+   ????????????
+Username for 'https://github.com': ryanccc
+From https://github.com/RyanCCC/MachineLearning
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git add Preprocessing/test.txt
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git commit -m 'test dir'
+[master cb46d20] test dir
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Preprocessing/test.txt
+
+Administrator@PC-201610031901 MINGW64 /g/LocalGitHub/MachineLearning (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 349 bytes | 174.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/RyanCCC/MachineLearning.git
+   483d556..cb46d20  master -> master
+
