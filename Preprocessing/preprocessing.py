@@ -75,7 +75,6 @@ print(balance)
 #     p.join()
 #     print('All subprocesses done.')
 
-C.J.L:
 from multiprocessing import Process
 import os, time
 def run_proc(name):
@@ -95,13 +94,6 @@ if __name__=='__main__':
         p.join()
     print('Child process end.')
 
-
-C.J.L:
-'''
-数据预处理
-row is sample
-column is feature
-'''
 
 import pandas as pd
 from io import StringIO
@@ -152,7 +144,6 @@ from sklearn.datasets import load_iris
 import numpy as np
 from sklearn.decomposition import DictionaryLearning
 
-C.J.L:
 #Binary
 X=[   [1,2,3,4,5],
       [5,4,3,2,1],
@@ -208,7 +199,6 @@ print("scale_is:",scaler.scale_)
 print("max_abs_ is:",scaler.max_abs_)
 print("after transform:",scaler.transform(X))
 
-C.J.L:
 #StandardScaler:z-score
 X=[      [1,5,1,2,10],
       [2,6,3,2,7],
@@ -246,7 +236,6 @@ print("After transform is %s"%selector.transform(X))
 print("The surport is %s"%selector.get_support(True))
 print("After reverse transform is %s"%selector.inverse_transform(selector.transform(X)))
 
-C.J.L:
 #SelectKBest
 X=[   [1,2,3,4,5],
       [5,4,3,2,1],
@@ -281,8 +270,6 @@ estimator=LinearSVC()
 selector=RFECV(estimator=estimator,cv=3)
 selector.fit(X,Y)
 print("Grid Scores %s"%selector.grid_scores_)
-
-C.J.L:
 #SelectFromModel
 iris=load_iris()
 X=iris.data
