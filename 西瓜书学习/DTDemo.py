@@ -4,6 +4,7 @@ from sklearn.externals.six import StringIO
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import Normalizer
 import numpy as np
+from sklearn.externals import joblib
 
 if __name__ == '__main__':
     #载入数据集
@@ -20,6 +21,9 @@ if __name__ == '__main__':
     # 决策树
     clf = tree.DecisionTreeClassifier()
     clf.fit(X_train, Y_train)
+    # 保存模型
+    joblib.dump(clf, 'tree.pkl')
+    clftemp = joblib.load('tree.pkl')
     y_predict = clf.predict(X_test)
     sum = 0
     for i in range(len(Y_test)):
