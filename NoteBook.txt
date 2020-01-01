@@ -21,5 +21,3 @@
 ===数据集划分
 sklearn.model_selection.train_test_split
 
-===转换器与预估器
-
